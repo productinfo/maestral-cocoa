@@ -48,6 +48,7 @@ var/
 *.dist-info/
 .installed.cfg
 *.egg
+*.dmg
 
 # IntelliJ Idea family of suites
 .idea
@@ -58,10 +59,3 @@ var/
 ## mpeltonen/sbt-idea plugin
 .idea_modules/
 
-# Briefcase build directories
-iOS/
-macOS/
-windows/
-android/
-linux/
-django/
