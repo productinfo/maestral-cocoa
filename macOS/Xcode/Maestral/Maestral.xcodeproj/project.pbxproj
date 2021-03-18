@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0516F02603B5B4009E3E69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0516EF2603B5B4009E3E69 /* main.m */; };
+		0D0516F82603B642009E3E69 /* com.samschott.maestral.Helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D0516ED2603B5B4009E3E69 /* com.samschott.maestral.Helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0D267B6B2554BB1800AC3E85 /* app_packages in Resources */ = {isa = PBXBuildFile; fileRef = 0D267B692554BB1800AC3E85 /* app_packages */; };
 		0D267B6C2554BB1800AC3E85 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 0D267B6A2554BB1800AC3E85 /* app */; };
 		0D354FD22551BFBD009178D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D354FD12551BFBD009178D1 /* Assets.xcassets */; };
@@ -26,7 +28,36 @@
 		6093520D25E9D15D00C549F3 /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6093520C25E9D14B00C549F3 /* libffi.tbd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0D0516F52603B5E3009E3E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D354FC02551BFBA009178D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D0516EC2603B5B4009E3E69;
+			remoteInfo = com.samschott.maestral.Helper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		0D0516EB2603B5B4009E3E69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0D0516F72603B5FE009E3E69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				0D0516F82603B642009E3E69 /* com.samschott.maestral.Helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D7B44BC2556177100CBC44B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +81,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0516ED2603B5B4009E3E69 /* com.samschott.maestral.Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.samschott.maestral.Helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0516EF2603B5B4009E3E69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D0516FA2603B711009E3E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D0516FC2603B73B009E3E69 /* launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
 		0D267B5F255427F200AC3E85 /* libPython.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPython.a; path = Support/Python/libPython.a; sourceTree = "<group>"; };
 		0D267B632554B99D00AC3E85 /* libbzip2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbzip2.a; path = Support/BZip2/libbzip2.a; sourceTree = "<group>"; };
 		0D267B642554B99D00AC3E85 /* libxz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxz.a; path = Support/XZ/libxz.a; sourceTree = "<group>"; };
@@ -74,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D0516EA2603B5B4009E3E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D354FC52551BFBA009178D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,11 +139,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0516EE2603B5B4009E3E69 /* com.samschott.maestral.Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0D0516EF2603B5B4009E3E69 /* main.m */,
+				0D0516FA2603B711009E3E69 /* Info.plist */,
+				0D0516FC2603B73B009E3E69 /* launchd.plist */,
+			);
+			path = com.samschott.maestral.Helper;
+			sourceTree = "<group>";
+		};
 		0D354FBF2551BFBA009178D1 = {
 			isa = PBXGroup;
 			children = (
 				0D7B44A925560B2400CBC44B /* Support */,
 				0D354FCA2551BFBA009178D1 /* Maestral */,
+				0D0516EE2603B5B4009E3E69 /* com.samschott.maestral.Helper */,
 				0D354FC92551BFBA009178D1 /* Products */,
 				0D354FE42551C1E1009178D1 /* Frameworks */,
 			);
@@ -111,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				0D354FC82551BFBA009178D1 /* Maestral.app */,
+				0D0516ED2603B5B4009E3E69 /* com.samschott.maestral.Helper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +205,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D0516EC2603B5B4009E3E69 /* com.samschott.maestral.Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D0516F32603B5B4009E3E69 /* Build configuration list for PBXNativeTarget "com.samschott.maestral.Helper" */;
+			buildPhases = (
+				0D0516E92603B5B4009E3E69 /* Sources */,
+				0D0516EA2603B5B4009E3E69 /* Frameworks */,
+				0D0516EB2603B5B4009E3E69 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.samschott.maestral.Helper;
+			productName = com.samschott.maestral.Helper;
+			productReference = 0D0516ED2603B5B4009E3E69 /* com.samschott.maestral.Helper */;
+			productType = "com.apple.product-type.tool";
+		};
 		0D354FC72551BFBA009178D1 /* Maestral */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D354FDC2551BFBD009178D1 /* Build configuration list for PBXNativeTarget "Maestral" */;
@@ -161,10 +232,12 @@
 				0D354FC62551BFBA009178D1 /* Resources */,
 				0D7B44BC2556177100CBC44B /* Embed Frameworks */,
 				0D7B44EB2556C8B800CBC44B /* Embed App Extensions */,
+				0D0516F72603B5FE009E3E69 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0D0516F62603B5E3009E3E69 /* PBXTargetDependency */,
 			);
 			name = Maestral;
 			productName = Maestral;
@@ -180,6 +253,9 @@
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Sam Schott";
 				TargetAttributes = {
+					0D0516EC2603B5B4009E3E69 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					0D354FC72551BFBA009178D1 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -199,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				0D354FC72551BFBA009178D1 /* Maestral */,
+				0D0516EC2603B5B4009E3E69 /* com.samschott.maestral.Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +315,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D0516E92603B5B4009E3E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0516F02603B5B4009E3E69 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D354FC42551BFBA009178D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +333,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0D0516F62603B5E3009E3E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D0516EC2603B5B4009E3E69 /* com.samschott.maestral.Helper */;
+			targetProxy = 0D0516F52603B5E3009E3E69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0D0516F12603B5B4009E3E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = G34LNR8C4Y;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/${TARGET_NAME}/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samschott.maestral.Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D0516F22603B5B4009E3E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = G34LNR8C4Y;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/${TARGET_NAME}/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samschott.maestral.Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0D354FDA2551BFBD009178D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,7 +549,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G34LNR8C4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +589,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Maestral/maestral-cocoa.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G34LNR8C4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -485,6 +622,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D0516F32603B5B4009E3E69 /* Build configuration list for PBXNativeTarget "com.samschott.maestral.Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0516F12603B5B4009E3E69 /* Debug */,
+				0D0516F22603B5B4009E3E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0D354FC32551BFBA009178D1 /* Build configuration list for PBXProject "Maestral" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
